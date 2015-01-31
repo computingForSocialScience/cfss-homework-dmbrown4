@@ -25,7 +25,8 @@ def readCSV(filename):
 #'''
 #-128 AND 129 are the location of the latitude and longitude
 #- used [][] to index first into list and then into the tuple.
-#'''
+
+#PART 3.1
 
 def get_avg_latlng():
 	tplelist = readCSV("permits_hydepark.csv")
@@ -42,3 +43,48 @@ def get_avg_latlng():
 
 get_avg_latlng()
 #need to this at the end to call the function.
+
+
+
+#readCSV("permits_hydepark.csv")[0][42]
+#index into list , then index into tuple for zip code
+
+def zip_code_barchart():
+	tplelist = readCSV("permits_hydepark.csv")
+	zip_list = []
+	for tple in tplelist:
+		if tple[28] != "":
+			zip_list.append(tple[28])
+		if tple[35] != "":
+			zip_list.append(tple[35])
+		if tple[42] != "":
+			zip_list.append(tple[42])
+		if tple[49] != "":
+			zip_list.append(tple[49])
+		if tple[56] != "":
+			zip_list.append(tple[56])
+		if tple[63] != "":
+			zip_list.append(tple[63])
+		if tple[70] != "":
+			zip_list.append(tple[70])
+		if tple[77] != "":
+			zip_list.append(tple[77])
+		if tple[84] != "":
+			zip_list.append(tple[84])
+		if tple[91] != "":
+			zip_list.append(tple[91])
+		if tple[98] != "":
+			zip_list.append(tple[98])
+		if tple[105] != "":
+			zip_list.append(tple[105])
+		if tple[112] != "":
+			zip_list.append(tple[112])
+		if tple[119] != "":
+			zip_list.append(tple[119])
+		if tple[126] != "":
+			zip_list.append(tple[126])
+
+	print zip_list
+	
+zip_code_barchart()		
+		
