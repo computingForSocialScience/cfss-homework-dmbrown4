@@ -101,15 +101,16 @@ def zip_code_barchart():
 			zip_count_dict[zp] +=1	
 	
 
-	print zip_list
-	print zip_count_dict
-	print zip_count_dict.keys()
+	#print zip_list
+	#print zip_count_dict
+	#print zip_count_dict.keys()
 	
 	zips_in_illinois={}
 	for zipcode in zip_count_dict.keys():
 		if zipcode>=60000:
 			zips_in_illinois[zipcode]=zip_count_dict[zipcode]
 
+	
 	#make histogram
 	import numpy as np
 	import matplotlib.pyplot as plt
@@ -124,13 +125,14 @@ def zip_code_barchart():
 	rects1 = ax.bar(x, y, width, color='b', yerr=y)
 	
 	ax.set_ylabel('Zip Code Count')
-	ax.set_title('Zip Code Bar Chart')
+	ax.set_xlabel('Zip Codes')
+	ax.set_title('Contractor Zip Codes')
 
 	plt.show()
 
 
 
-zip_code_barchart()		
+zip_code_barchart() > Zip_Code_Histogram.jpg
 
 
 #Questions for Wednesday:
