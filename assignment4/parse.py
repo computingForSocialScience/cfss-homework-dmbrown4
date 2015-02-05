@@ -41,7 +41,7 @@ def get_avg_latlng():
 	lng_avg = lng_sum/len(tplelist)
 	print "Latituge Average", lat_avg, "Longitude Average", lng_avg
 
-get_avg_latlng()
+#get_avg_latlng()
 #need to this at the end to call the function.
 
 
@@ -128,11 +128,10 @@ def zip_code_barchart():
 	ax.set_xlabel('Zip Codes')
 	ax.set_title('Contractor Zip Codes')
 
-	plt.show()
+	#plt.show()
+	plt.savefig('Zip_Code_Histogram.jpg') 
 
-
-
-zip_code_barchart() > Zip_Code_Histogram.jpg
+#zip_code_barchart()
 
 
 #Questions for Wednesday:
@@ -140,3 +139,8 @@ zip_code_barchart() > Zip_Code_Histogram.jpg
 #2. make sure I understand question 3.3 and how to answer it
 #3. make sure I can commit new versions of my hw
 		
+
+if sys.argv[1] == 'hist':
+	zip_code_barchart()
+elif sys.argv[1] == 'latlong':
+	get_avg_latlng()
