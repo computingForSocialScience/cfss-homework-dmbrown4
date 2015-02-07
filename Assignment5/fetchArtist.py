@@ -60,8 +60,6 @@ def fetchArtistInfo(artist_id):
 
 
 
-#artist_id = fetchArtistId('Beatles')
-#print fetchArtistInfo(artist_id)
 
 
 
