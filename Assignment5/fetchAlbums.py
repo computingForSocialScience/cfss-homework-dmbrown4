@@ -8,7 +8,7 @@ def fetchAlbumIds(artist_id):
     """Using the Spotify API, take an artist ID and 
     returns a list of album IDs in a list
     """
-    url = 'https://api.spotify.com/v1/artists/' + artist_id + '/albums?market=US&albumtype=album'
+    url = 'https://api.spotify.com/v1/artists/' + artist_id + '/albums?market=US&album_type=album'
     req = requests.get(url)
 
     data = req.json()
