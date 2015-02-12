@@ -58,9 +58,8 @@ def fetchArtistInfo(artist_id):
 
     return artist_info_dict
 
-
-
-
+if __name__ == '__main__':
+    fetchArtistInfo(fetchArtistId('Sia'))
 
 
 

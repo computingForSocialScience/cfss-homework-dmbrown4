@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-import fetchArtist
+from fetchArtist import *
 
 
 def fetchAlbumIds(artist_id):
@@ -53,9 +53,10 @@ def fetchAlbumInfo(album_id):
     return album_info_dict
 
 
-print fetchAlbumInfo(fetchAlbumIds(fetchArtist.fetchArtistId('Sia'))[0])
+if __name__ == '__main__':
+    fetchAlbumInfo(fetchAlbumIds(fetchArtistId('Sia'))[0])
 
-#artist_id = fetchArtist.fetchArtistId('Beatles')
+#artist_id = fetchArtistId('Beatles')
 #print fetchAlbumIds(artist_id)
 
 
