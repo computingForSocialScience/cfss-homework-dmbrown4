@@ -3,12 +3,15 @@ from analyzeNetworks import *
 from fetchArtist import *
 from fetchAlbums import *
 
+
 import sys
 import requests
 import csv
 import pandas as pd
 import networkx as nx
 import numpy as np
+import io
+
 
 # Takes any number of artist names as command-line arguments and 
 # which writes a file called `playlist.csv` that lists 30 songs 
@@ -70,7 +73,7 @@ for random_node in random_node_list:
 # dict_list.append(random_album_dict)
 # dict_list.append(random_song_dict)
 
-f = open('playlist.csv','w')
+f = open('playlist.csv','w', encoding = 'utf-8')
 f.write(u'artist_name,album_name,track_name\n')
 
 for random_node in random_node_list:
