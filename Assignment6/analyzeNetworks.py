@@ -32,19 +32,24 @@ def	degree(edgeList, in_or_out):
 	# 2. a string that is either 'in' or 'out'). Function returns the in-degree
 	# or out-degree for all nodes in a given edge list.
 
+	#degree_edgelist = readEdgeList(edgeList)
+	#degree_edgelist = pd.read_csv(edgeList)
+
 	if in_or_out == 'in':
-		return edgeList['Artist'].value_counts()
-	elif in_or_out == 'out':
+		#return degree_edgeList['Artist'].value_counts()
 		return edgeList['Related Artist'].value_counts()
+	elif in_or_out == 'out':
+		#return degree_edgeList['Related Artist'].value_counts()
+		return edgeList['Artist'].value_counts()
 	else:
 		print "Error: invalid argument. must enter either 'in' or 'out'"	
 
 
 			
-#print degree(readEdgeList('Edge_List_1.csv'), "out")
+#print degree('Edge_List_1.csv', "out")
 
 
-def combineEdgelists(edgeList1, edgeList2):
+def combineEdgeLists(edgeList1, edgeList2):
 	# Takes two data frames as arguments and combines them into into
 	# one long edge list. Returned data frame has no duplicate rows.
 
@@ -59,9 +64,13 @@ def combineEdgelists(edgeList1, edgeList2):
 def pandasToNetworkX(edgeList):
 	# Creates a NetworkX Digraph from an edge list in a pandas data frame.
 
-	G = nx.DiGraph()
-	EdgeList = readEdgeList(edgeList)
-	for Artist, Related_Artist in EdgeList.to_records(index=False):
+	# G = nx.DiGraph()
+	# EdgeList = readEdgeList(edgeList)
+	# for Artist, Related_Artist in EdgeList.to_records(index=False):
+ # 		G.add_edge(Artist, Related_Artist)
+
+ 	G = nx.DiGraph()
+	for Artist, Related_Artist in edgeList.to_records(index=False):
  		G.add_edge(Artist, Related_Artist)
 
 		#circularLayout = nx.layout.circular_layout(G)
@@ -90,7 +99,9 @@ def randomCentralNode(inputDiGraph):
 	random_node = np.random.choice(normalized_eigen_dict.keys(), p=normalized_eigen_dict.values())
 	return random_node
 
-print randomCentralNode(pandasToNetworkX('Edge_List_1.csv'))
+#print randomCentralNode(pandasToNetworkX('Edge_List_1.csv'))
+
+
 
 
 

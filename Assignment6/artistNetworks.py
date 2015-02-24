@@ -115,8 +115,8 @@ def writeEdgeList(artist_id, depth, filename):
 	return EdgeListCSV
 	
 
-writeEdgeList('7CyeXFnOrfC1N6z4naIpgo',2,'Edge_List_2.csv')	
-
+#writeEdgeList('7CyeXFnOrfC1N6z4naIpgo',2,'Edge_List_1.csv')	
+#writeEdgeList('08b2PA6eFyugsWAk41eQKZ',2,'Edge_List_2.csv')
 
 
 
