@@ -42,6 +42,9 @@ def make_playlists_resp():
     cur.execute("""SELECT * FROM playlists;""")
     playlists=cur.fetchall()
     return render_template('playlists.html',playlists=playlists)
+# """For this part of my code I was able to render a web page with a list of links
+# for each of the artists in my database. However, I have not been able to figure out
+# how to link the playlist information to the link itself"""    
 
 
 @app.route('/playlist/<listId>')
@@ -65,6 +68,12 @@ def add_playlist():
         # YOUR CODE HERE
         createNewPlaylist(artistName)
         return(redirect("/playlists/"))
+        # """When I enter a new artist name to create a new playlist using the web page
+        # the code always creates a new playlist that can be viewed when you click
+        # on the 'View all existing playlists' link. However, sometimes after the code runs I
+        # get a UnicodeEncodeError that pops up on the webpage. This happens sometimes but not always.
+        # Regardless of the error though my code always creates a new playlist within my database
+        # and the rootArtist for this playlist is added to my list of links for my playlists"""
 
 
 
