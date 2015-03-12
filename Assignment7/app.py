@@ -63,6 +63,7 @@ def add_playlist():
         # this code executes when someone fills out the form
         artistName = request.form['artistName']
         # YOUR CODE HERE
+        createNewPlaylist(artistName)
         return(redirect("/playlists/"))
 
 
