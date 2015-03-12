@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+	<title>Playlists</title>
+</head>
+<body>
+	<table>
+	<ul id="navigation">
+	{% for id,rootArtist in playlists %}
+		<tr>
+			<li><a href="/playlist/{playlistId}">{{ id}}.{{ rootArtist}}</a></li>				
+		</tr>	
+	{% endfor %}
+	</table>
+
+</body>
+</html>					
