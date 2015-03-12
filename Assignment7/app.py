@@ -44,7 +44,14 @@ def make_playlists_resp():
     return render_template('playlists.html',playlists=playlists)
 # """For this part of my code I was able to render a web page with a list of links
 # for each of the artists in my database. However, I have not been able to figure out
-# how to link the playlist information to the link itself"""    
+# how to link the playlist information to the link itself. Whenever I try to SELECT from
+# both the playlists and songs tables I get an error saying that there is too much information
+# to unpack. I have fiddled with my code for a while to fix this but cannot find out exactly
+# what is triggering this error. I understand that ultimately playlists.html would include
+# a line like <li><a href="/playlist/{{playlistId}}">{{ id}}.{{ rootArtist}}</a></li> that
+# links to the playlist pages using the playlist.html. However, because I have been
+# unable to fix this Unpacking Error I have left the code like this so that the playlist
+# links send you to an empty playlist rather than an error page."""    
 
 
 @app.route('/playlist/<listId>')
@@ -70,7 +77,8 @@ def add_playlist():
         return(redirect("/playlists/"))
         # """When I enter a new artist name to create a new playlist using the web page
         # the code always creates a new playlist that can be viewed when you click
-        # on the 'View all existing playlists' link. However, sometimes after the code runs I
+        # on the 'View all existing playlists' link. It also always puts the playlist 
+        # information into my databse. However, sometimes after the code runs I
         # get a UnicodeEncodeError that pops up on the webpage. This happens sometimes but not always.
         # Regardless of the error though my code always creates a new playlist within my database
         # and the rootArtist for this playlist is added to my list of links for my playlists"""
