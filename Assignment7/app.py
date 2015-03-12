@@ -38,11 +38,19 @@ def make_index_resp():
 
 @app.route('/playlists/')
 def make_playlists_resp():
+    cur = db.cursor()
+    cur.execute("""SELECT * FROM playlists;""")
+    playlists=cur.fetchall()
     return render_template('playlists.html',playlists=playlists)
 
 
-@app.route('/playlist/<playlistId>')
-def make_playlist_resp(playlistId):
+@app.route('/playlist/<listId>')
+def make_playlist_resp(listId):
+    cur = db.cursor()
+    sql = """SELECT songOrder, artistName, albumName, trackName FROM songs 
+        WHERE playlistId=%s ORDER BY songOrder;"""
+    cur.execute(sql, listId)
+    songs=cur.fetchall()
     return render_template('playlist.html',songs=songs)
 
 
@@ -152,8 +160,8 @@ def createNewPlaylist(artist):
         cur.execute(sql, (playlistId, songOrder)+i_tuple)
         songOrder +=1
         
-createNewPlaylist("REO Speedwagon") 
-createNewPlaylist("Def Leppard")       
+#createNewPlaylist("REO Speedwagon") 
+#createNewPlaylist("Def Leppard")       
 
 
 if __name__ == '__main__':
