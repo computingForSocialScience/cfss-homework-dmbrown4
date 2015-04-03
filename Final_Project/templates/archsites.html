@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Afghan Archaeological Sites</title>
+</head>
+<body style="background-color:lightgray">
+<style>
+h2 {text-align:center; font-family:verdana;}
+ul {text-align:center;}
+</style>
+
+ 	<h2>Archaeological Sites In Herat Province</h2>
+	<hr>
+
+	<table>
+	<ul id="navigation">
+	
+	{% for id, siteName in heratsites %}
+		<tr>
+			<li><a href="/archsites/{{id}}">{{siteName}}</a></li>				
+		</tr>	
+	{% endfor %}
+	</table>
+
+</body>
+</html>		

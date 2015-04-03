@@ -1,0 +1,11 @@
+CfSS Final Project
+Dani Brown and Kate McDonnell
+
+For our final project, we designed a website to help show the results from an experimental study on archaeological threat assessments in Afghanistan. For this project, we looked at where archaeological sites in Herat Province are at risk from modern mining projects. The data for the mining projects and the archaeological sites came from the USGS Projects in Afghanistan online database and Warwick Ball's 'Archaeological Gazetteer of Afghanistan' (1982) respectively.
+
+The index page of our website displays a static map generated through ArcGIS and displayed through an active online link. We used photobucket to display our image in a way that did not require us to use a local file. The image shows all of the known archaeological sites in Herat Province, Afghanistan. Each site is color coded based on a threat assessment level created by Dani for her masters thesis. For the threat assessment scale, a 0 designates no threat and a 4 designates a very high threat level. The threat level system is based on 4 geographic criteria: 1) the site falls within a USGS area of interest(AOI), 2) the site falls within a USGS AOI subarea, 3) the site is within an hour of a known mineral location, 4) the site is within 15 minutes of an existing road. The analysis was intially done through ArcGIS. 
+
+The threat assessment criteria information for each site was entered into a MYSQL database. The breakdown of threat criteria for each archaeological site can be viewed by clicking on the active link "Individual Site Threat Assessment" on the home page. From there you can navigate to webpages for each individual archaeological site by clicking on its link. These links were generated using the MySQL database. 
+
+The other active link on the home page, "Map of Archaeological Sites," allows take you to navigate to an interactive map of Afghanistan. To display our interactive map we used the googlemaps API. We centered our map on Herat province and manually entered the coordinates into our html script map.html. Here we also designated the size and shape of the map to fill the screen, and provide a title. 
+ 

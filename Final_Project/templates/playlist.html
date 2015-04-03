@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<title>ArchSites</title>
+</head>
+<body style="background-color:lightgray">
+<style>
+h2 {text-align:center; font-family:verdana;}
+p {text-align:center; font-family:verdana;}
+table {text-align:center;}
+</style>
+
+	<h2>Threat Assessment Table</h2>
+	<p>The threat assessments range from 0 to 4, with 0 being low threat and 4 being high threat.</p>
+	
+	<table border="1" style="width:100%">	
+		<tr>
+			<th>Site Name</th>
+			<th>Witin AOI</th>
+			<th>Within AOI Subarea</th>
+			<th>Close Mineral Proximity</th>
+			<th>Close Road Proximity</th>
+			<th>Threat Level</th>
+		</tr>	
+	{% for id, siteName,aoi,aoiSubarea,mineralProximity,roadProximity,threatLevel in heratsites %}
+		<tr>
+			<td>{{ siteName }}</td>
+			<td>{{ aoi }}</td>
+			<td>{{ aoiSubarea }}</td>
+			<td>{{ mineralProximity }}</td>
+			<td>{{ roadProximity }}</td>
+			<td>{{ threatLevel }}</td>			
+		</tr>	
+	{% endfor %}
+	</table>
+
+</body>
+</html>		

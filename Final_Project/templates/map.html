@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+	<title>Afghanistan Map</title>
+</head>  
+<body style="background-color:lightgray">  
+  <h2 style="text-align:center">Archaeological Sites of Herat Province, Afghanistan</h2>
+
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var site1=new google.maps.LatLng(34.20000,63.03333)
+var site2=new google.maps.LatLng(33.63333,62.26667)
+var site3=new google.maps.LatLng(35.06667,61.81667)
+var site4=new google.maps.LatLng(34.36667,62.15000)
+var site5=new google.maps.LatLng(34.35000,62.23333)
+var site6=new google.maps.LatLng(34.38333,61.60000)
+var site7=new google.maps.LatLng(34.43333,61.61667)
+var site8=new google.maps.LatLng(34.43333,63.11667)
+var site9=new google.maps.LatLng(35.11667,62.31667)
+var site10=new google.maps.LatLng(34.33333,63.73333)
+var site11=new google.maps.LatLng(34.61667,62.08333)
+var site12=new google.maps.LatLng(33.13333,62.13333)
+var site13=new google.maps.LatLng(34.26667,62.00000)
+var site14=new google.maps.LatLng(34.36667,62.23333)
+var site15=new google.maps.LatLng(34.35000,62.15000)
+var site16=new google.maps.LatLng(34.38333,62.16667)
+var site17=new google.maps.LatLng(34.35000,63.61667)
+var site18=new google.maps.LatLng(34.35000,61.50000)
+var site19=new google.maps.LatLng(35.10000,61.68333)
+var site20=new google.maps.LatLng(34.31667,63.11667)
+var site21=new google.maps.LatLng(34.18333,62.03333)
+var site22=new google.maps.LatLng(34.71667,62.33333)
+var site23=new google.maps.LatLng(34.33333,62.18333)
+var site24=new google.maps.LatLng(32.78333,61.98333)
+var site25=new google.maps.LatLng(34.26667,61.93333)
+var site26=new google.maps.LatLng(34.48333,62.63333)
+var site27=new google.maps.LatLng(34.56667,61.30000)
+var site28=new google.maps.LatLng(34.21667,62.51667)
+var site29=new google.maps.LatLng(34.31667,61.85000)
+var site30=new google.maps.LatLng(33.70000,62.71667)
+var site31=new google.maps.LatLng(33.48333,62.26667)
+var site32=new google.maps.LatLng(34.65000,61.20000)
+var site33=new google.maps.LatLng(34.96667,62.35000)
+var site34=new google.maps.LatLng(34.31667,62.10667)
+var site35=new google.maps.LatLng(34.65000,62.10000)
+var site36=new google.maps.LatLng(34.08333,62.21667)
+var site37=new google.maps.LatLng(33.81667,62.10000)
+var site38=new google.maps.LatLng(33.36667,62.25000)
+var site39=new google.maps.LatLng(34.70000,62.95000)
+var site40=new google.maps.LatLng(34.36667,63.16667)
+var site41=new google.maps.LatLng(34.33333,61.41667)
+var site42=new google.maps.LatLng(34.06667,62.41667)
+var site43=new google.maps.LatLng(34.28333,62.18333)
+var site44=new google.maps.LatLng(33.28333,62.18333)
+var site45=new google.maps.LatLng(33.10000,62.10000)
+var site46=new google.maps.LatLng(34.43333,62.20000)
+var site47=new google.maps.LatLng(33.78333,62.25000)
+var site48=new google.maps.LatLng(33.28333,62.16667)
+var site49=new google.maps.LatLng(34.33333,61.68333)
+var site50=new google.maps.LatLng(34.93333,61.78333)
+var site51=new google.maps.LatLng(34.71667,62.11667)
+var site52=new google.maps.LatLng(34.26667,61.73333)
+var site53=new google.maps.LatLng(34.23333,62.20000)
+var site54=new google.maps.LatLng(34.85000,61.86667)
+var site55=new google.maps.LatLng(34.76667,62.10000)
+var site56=new google.maps.LatLng(34.80000,62.15000)
+var site57=new google.maps.LatLng(34.33333,63.56667)
+var site58=new google.maps.LatLng(35.01667,62.30000)
+var site59=new google.maps.LatLng(34.50000,61.38333)
+var site60=new google.maps.LatLng(33.93333,62.23333)
+var site61=new google.maps.LatLng(34.36667,61.43333)
+var site62=new google.maps.LatLng(33.46667,62.23333)
+var site63=new google.maps.LatLng(33.85000,61.85000)
+var site64=new google.maps.LatLng(33.30000,62.13333)
+var site65=new google.maps.LatLng(35.03333,61.65000)
+var site66=new google.maps.LatLng(34.30000,63.05000)
+var site67=new google.maps.LatLng(34.38333,63.46667)
+var site68=new google.maps.LatLng(34.66667,61.08333)
+var site69=new google.maps.LatLng(34.60000,61.26667)
+var site70=new google.maps.LatLng(34.35000,61.75000)
+var site71=new google.maps.LatLng(34.20000,62.13333)
+var site72=new google.maps.LatLng(34.91667,61.71661)
+var site73=new google.maps.LatLng(34.16667,63.10000)
+var site74=new google.maps.LatLng(35.23333,62.23333)
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(34.3436733,62.2023147),
+    zoom:7,
+    mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+var marker1=new google.maps.Marker({position:site1, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker2=new google.maps.Marker({position:site2, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker3=new google.maps.Marker({position:site3, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker4=new google.maps.Marker({position:site4, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker5=new google.maps.Marker({position:site5, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker6=new google.maps.Marker({position:site6, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker7=new google.maps.Marker({position:site7, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker8=new google.maps.Marker({position:site8, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker9=new google.maps.Marker({position:site9, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker10=new google.maps.Marker({position:site10, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker11=new google.maps.Marker({position:site11, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker12=new google.maps.Marker({position:site12, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker13=new google.maps.Marker({position:site13, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker14=new google.maps.Marker({position:site14, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker15=new google.maps.Marker({position:site15, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker16=new google.maps.Marker({position:site16, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker17=new google.maps.Marker({position:site17, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker18=new google.maps.Marker({position:site18, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker19=new google.maps.Marker({position:site19, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker20=new google.maps.Marker({position:site20, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker21=new google.maps.Marker({position:site21, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker22=new google.maps.Marker({position:site22, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker23=new google.maps.Marker({position:site23, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker24=new google.maps.Marker({position:site24, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker25=new google.maps.Marker({position:site25, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker26=new google.maps.Marker({position:site26, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker27=new google.maps.Marker({position:site27, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker28=new google.maps.Marker({position:site28, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker29=new google.maps.Marker({position:site29, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker30=new google.maps.Marker({position:site30, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker31=new google.maps.Marker({position:site31, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker32=new google.maps.Marker({position:site32, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker33=new google.maps.Marker({position:site33, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker34=new google.maps.Marker({position:site34, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker35=new google.maps.Marker({position:site35, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker36=new google.maps.Marker({position:site36, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker37=new google.maps.Marker({position:site37, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker38=new google.maps.Marker({position:site38, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker39=new google.maps.Marker({position:site39, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker40=new google.maps.Marker({position:site40, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker41=new google.maps.Marker({position:site41, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker42=new google.maps.Marker({position:site42, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker43=new google.maps.Marker({position:site43, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker44=new google.maps.Marker({position:site44, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker45=new google.maps.Marker({position:site45, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker46=new google.maps.Marker({position:site46, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker47=new google.maps.Marker({position:site47, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker48=new google.maps.Marker({position:site48, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker49=new google.maps.Marker({position:site49, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker50=new google.maps.Marker({position:site50, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker51=new google.maps.Marker({position:site51, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker52=new google.maps.Marker({position:site52, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker53=new google.maps.Marker({position:site53, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker54=new google.maps.Marker({position:site54, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker55=new google.maps.Marker({position:site55, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker56=new google.maps.Marker({position:site56, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker57=new google.maps.Marker({position:site57, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker58=new google.maps.Marker({position:site58, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker59=new google.maps.Marker({position:site59, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker60=new google.maps.Marker({position:site60, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker61=new google.maps.Marker({position:site61, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker62=new google.maps.Marker({position:site62, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker63=new google.maps.Marker({position:site63, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker64=new google.maps.Marker({position:site64, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker65=new google.maps.Marker({position:site65, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker66=new google.maps.Marker({position:site66, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker67=new google.maps.Marker({position:site67, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker68=new google.maps.Marker({position:site68, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker69=new google.maps.Marker({position:site69, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker70=new google.maps.Marker({position:site70, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker71=new google.maps.Marker({position:site71, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker72=new google.maps.Marker({position:site72, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker73=new google.maps.Marker({position:site73, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+var marker74=new google.maps.Marker({position:site74, icon:'https://maps.gstatic.com/intl/en_ALL/mapfiles/markers2/measle.png'})
+marker1.setMap(map);
+marker2.setMap(map);
+marker3.setMap(map);
+marker4.setMap(map);
+marker5.setMap(map);
+marker6.setMap(map);
+marker7.setMap(map);
+marker8.setMap(map);
+marker9.setMap(map);
+marker10.setMap(map);
+marker11.setMap(map);
+marker12.setMap(map);
+marker13.setMap(map);
+marker14.setMap(map);
+marker15.setMap(map);
+marker16.setMap(map);
+marker17.setMap(map);
+marker18.setMap(map);
+marker19.setMap(map);
+marker20.setMap(map);
+marker21.setMap(map);
+marker22.setMap(map);
+marker23.setMap(map);
+marker24.setMap(map);
+marker25.setMap(map);
+marker26.setMap(map);
+marker27.setMap(map);
+marker28.setMap(map);
+marker29.setMap(map);
+marker30.setMap(map);
+marker31.setMap(map);
+marker32.setMap(map);
+marker33.setMap(map);
+marker34.setMap(map);
+marker35.setMap(map);
+marker36.setMap(map);
+marker37.setMap(map);
+marker38.setMap(map);
+marker39.setMap(map);
+marker40.setMap(map);
+marker41.setMap(map);
+marker42.setMap(map);
+marker43.setMap(map);
+marker44.setMap(map);
+marker45.setMap(map);
+marker46.setMap(map);
+marker47.setMap(map);
+marker48.setMap(map);
+marker49.setMap(map);
+marker50.setMap(map);
+marker51.setMap(map);
+marker52.setMap(map);
+marker53.setMap(map);
+marker54.setMap(map);
+marker55.setMap(map);
+marker56.setMap(map);
+marker57.setMap(map);
+marker58.setMap(map);
+marker59.setMap(map);
+marker60.setMap(map);
+marker61.setMap(map);
+marker62.setMap(map);
+marker63.setMap(map);
+marker64.setMap(map);
+marker65.setMap(map);
+marker66.setMap(map);
+marker67.setMap(map);
+marker68.setMap(map);
+marker69.setMap(map);
+marker70.setMap(map);
+marker71.setMap(map);
+marker72.setMap(map);
+marker73.setMap(map);
+marker74.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<div id="googleMap" style="width:1200px;height:760px;"></div>
+</body>
+</html>
